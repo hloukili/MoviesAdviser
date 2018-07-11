@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/cinema"
+    tools:context="com.hfad.moviesadviser.FindMovieActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@color/colorSpinner"
+        android:entries="@array/genre_movie">
+    </Spinner>
+
+    <Button
+        android:id="@+id/find_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:onClick="onClickFindMovie"
+        android:text="@string/find_movie" />
+
+    <TextView
+        android:id="@+id/movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/movie_results" />
+
+</LinearLayout>
